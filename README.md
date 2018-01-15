@@ -19,3 +19,5 @@ Challenge
 Given a knight located on a coordinate chosen by the user find out all possible locations
 where the knight can move in 2 turns.
 You are expected to build a web application and an API.
+
+
