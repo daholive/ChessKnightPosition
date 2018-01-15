@@ -87,8 +87,9 @@ def FindPosKnight(matrix, coordTupla):
 
 Chamada para as funções
 -----------------------
+
 ```
-#define tamanho do tabuleiro
+''' define tamanho do tabuleiro'''
 y = ['a','b','c','d','e','f','g','h']      
 x = [8,7,6,5,4,3,2,1]
 
