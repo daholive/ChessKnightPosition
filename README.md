@@ -21,10 +21,12 @@ where the knight can move in 2 turns.
 You are expected to build a web application and an API.
 
 
-
+Importando a biblioteca numpy para manipulação de matrizes
 ```
 import numpy as np
+```
 
+```
 def IndiceCavalo(pos):
     valInd = []
     for i in range(8):
@@ -33,5 +35,5 @@ def IndiceCavalo(pos):
                 valInd.append((i,j))
                 break
     return valInd
-
 ```
+
