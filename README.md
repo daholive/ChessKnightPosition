@@ -89,18 +89,22 @@ Chamada para as funções
 -----------------------
 
 ```
-''' define tamanho do tabuleiro'''
+'''define tamanho do tabuleiro'''
 y = ['a','b','c','d','e','f','g','h']      
 x = [8,7,6,5,4,3,2,1]
 
+'''gera uma lista com os valores'''
 temp = [(str(i) + j) for i in x for j in y]
 
+'''converte para matrix no formato 8 x 8'''
 mtx = np.asmatrix(temp).reshape(8,8)
 
+'''Mostra modelo de tabuleiro com coordenadas e solicita para usuário posição inicial de jogada'''
 print('\n {} \n'.format(mtx))
 input_user = str(input('Veja o tabuleiro e escolha qual a coordenada do cavalo? '))
 pos = IndiceCavalo(input_user)
 
+'''apresenta resultado'''
 result = FindPosKnight(mtx, pos)
 new_matrix = DefinePosKnight(mtx, pos)
 ```
