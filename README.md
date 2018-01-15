@@ -22,6 +22,7 @@ You are expected to build a web application and an API.
 
 
 Importando a biblioteca numpy para manipulação de matrizes
+----------------------------------------------------------
 ```
 import numpy as np
 ```
