@@ -27,6 +27,8 @@ Importando a biblioteca numpy para manipulação de matrizes
 import numpy as np
 ```
 
+Função para determinar a posição do cavalo no tabuleiro
+-------------------------------------------------------
 ```
 def IndiceCavalo(pos):
     valInd = []
@@ -38,3 +40,24 @@ def IndiceCavalo(pos):
     return valInd
 ```
 
+Função para determinar as possíveis jogadas com o cavalo
+--------------------------------------------------------
+```
+def FindPosKnight(matrix, coordTupla):
+    x = coordTupla[0][0]
+    y = coordTupla[0][1]
+    valInd = []
+
+    for dXY in [(-2, -1), (-1, -2), (1, -2), (2, -1), (-2, 1), (-1, 2), (1, 2), (2, 1)]:
+        ResX = x - dXY[0]
+        RexY = y - dXY[1]
+        NewTpl = (x, y)
+
+        for i in range(8):
+            for j in range(8):
+                if i == ResX and j == RexY:
+                    valInd.append(matrix[i, j])
+                    break
+
+    return valInd
+```
